@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap');
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --brand-blue: #000075;
+    --brand-blue-hover: #000055;
+    --brand-blue-light: #93C5FD;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+    color: #0F172A;
+    background-color: #F8FAFC;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  @media (min-width: 1024px) {
+    html {
+      font-size: 17px;
+    }
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #F8FAFC;
+    width: 100%;
+    font-family: var(--font-sans);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-sans);
+  }
+
+  /* Accessibility focus styles */
+  :focus-visible {
+    outline: 3px solid #000075;
+    outline-offset: 3px;
+  }
+}
+
+/* Unified Typography Heading Utility */
+.font-serif-editorial {
+  font-family: var(--font-sans);
+  letter-spacing: -0.02em;
+}
+
+/* Custom scrollbar in #000075 brand blue theme */
+::-webkit-scrollbar {
+  width: 9px;
+}
+::-webkit-scrollbar-track {
+  background: #E2E8F0;
+}
+::-webkit-scrollbar-thumb {
+  background: #000075;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #000055;
+}

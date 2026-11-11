@@ -1,0 +1,15 @@
+{
+  "short_name": "Dental Lounge",
+  "name": "Mansehra Dental Lounge",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "type": "image/png",
+      "sizes": "192x192 512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#000000",
+  "theme_color": "#000075",
+  "display": "standalone"
+}
